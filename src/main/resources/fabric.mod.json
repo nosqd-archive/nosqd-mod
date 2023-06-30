@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "nosqd-mod",
+  "version": "${version}",
+  "name": "nosqd mods",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/user/nosqd-mod"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/nosqd-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.nosqd.nosqdmod.client.NosqdModsClient"
+    ],
+    "main": [
+      "dev.nosqd.nosqdmod.NosqdMods"
+    ]
+  },
+  "mixins": [
+    "nosqd-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
